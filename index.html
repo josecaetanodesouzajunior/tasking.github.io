@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/b3198cde4d.js" crossorigin="anonymous"></script>
+    <script>
+        function showMenu() {
+            document.getElementById("menu").style.display = "block";
+            document.getElementById("btn-menu-mostrar").style.display = "none";
+            document.getElementById("btn-menu-esconder").style.display = "block";
+        }
+
+        function hideMenu() {
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("btn-menu-esconder").style.display = "none";
+            document.getElementById("btn-menu-mostrar").style.display = "block";
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header row mt-4 mb-4">
+            <div class="col-md-3 col-sm-12 logo">
+                <a>
+                    <img src="img/logo-nobg.png" class="logo-img" />
+                </a>
+                <div class="col-sm-12 btn-group">
+                    <a id="btn-menu-mostrar" onclick="showMenu()"><span class="material-icons"
+                            style=" font-size: 35px !important;">
+                            expand_more
+                        </span></a>
+                    <a id="btn-menu-esconder" onclick="hideMenu()"><span class="material-icons"
+                            style=" font-size: 35px !important;">
+                            expand_less
+                        </span></a>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-12">
+                <div class="row h-100">
+                    <div class="col-md-12 h-100">
+                        <div class="row top-nav">
+                            <div class="col-md-12 d-flex justify-content-end align-items-center" style="font-size:small ;">
+                                <div class="items-align m-2">
+                                    <span class="material-icons"> local_phone </span>&nbsp; (11) 9999-9999
+                                </div>
+                                <div class="items-align m-2">
+                                    <span class="material-icons"> email </span> &nbsp; atendimento@clinicatasking.com.br
+                                </div>
+                                <i class="fab fa-instagram m-2" style="font-size: 18px;"> </i>
+                                <i class="fab fa-facebook m-2" style="font-size: 18px;"></i>
+                            </div>
+                        </div>
+                        <div class="row menu align-bottom" id="menu">
+                            <div class="col-md-12 d-flex justify-content-end mt-2 nav-block">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Quem somos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Nossos serviços</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Equipe</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">A clínica</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contato</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- Banner -->
+        <div class="banner row align-items-center">
+            <div class="layer">
+            </div>
+            <div class="col-md-12 text-center ">
+                <div class="col-md-12 banner-title fadeInDown">
+                    <h2>Uma Medodologia
+                        <br/> Inovadora</h2>
+                </div>
+                <div class="col-md-12 banner-subtitle fadeInUp ">
+                    <p>Atendimentos multiprofissionais interligados,<br /> baseados na Análise do Comportamento Aplicada (ABA).
+                        <br /> Um método inovador que potencializa resultados.</p>
+                </div>
+                <div class="col-md-12 banner-button fadeInUp">
+
+                    <button class="btn-purple shadow" type="submit">Saiba mais</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Banner 2 -->
+        <div class="row servicos">
+
+            <div class="container mt-5 mb-5">
+                <div class="row  pt-5 pb-5">
+                    <div class="col-md-6">
+                        <div class="col-md-12 ">
+                            <h2 class="font-weight-bold">Atendimento<br/> Comportamental <br/>Integrado</h2>
+                        </div>
+                        <div class="col-md-12 banner-subtitle ">
+                            <p>Se você está buscando um atendimento embasado na Análise do Comportamento Aplicada (ABA), com profissionais altamente qualificados, experientes e que amam profundamente o que fazem venha para a TASKING.
+
+                            </p>
+                        </div>
+                        <div class="col-md-12 banner-button mt-5 mb-4">
+
+                            <button class="btn-purple" type="submit">Entre em contato</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <img style="max-width: 600px;" src="https://desenvolviver.com/wp-content/uploads/2019/05/Psicoterapia-desenvolviver.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Serviços -->
+        <div class="row pb-5 pt-4">
+            <div class="container">
+                <div class="row pb-5 pt-5">
+
+                    <div class="col-md-12 mb-5 text-center">
+                        <h2 class="font-weight-bold">Serviços</h2>
+                        <h6>Conheça nossas especialidades</h6>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-dark border-0 shadow rounded-pill">
+                            <div class="d-flex align-items-center p-2 justify-content-center">
+                                <span class="material-icons md-36">
+                                    navigate_next
+                                </span>
+                                <h6 class="card-title mt-2 "> Atendimento ABA </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-dark border-0 shadow rounded-pill">
+                            <div class="d-flex align-items-center p-2 justify-content-center">
+                                <span class="material-icons md-36">
+                                    navigate_next
+                                </span>
+                                <h6 class="card-title mt-2 "> Atendimento em grupo </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-dark border-0 shadow rounded-pill">
+                            <div class="d-flex align-items-center p-2 justify-content-center">
+                                <span class="material-icons md-36">
+                                    navigate_next
+                                </span>
+                                <h6 class="card-title mt-2 "> Consultoria </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mb-4">
+                        <div class="card text-dark border-0 shadow rounded-pill">
+                            <div class="d-flex align-items-center p-2 justify-content-center">
+                                <span class="material-icons md-36">
+                                    navigate_next
+                                </span>
+                                <h6 class="card-title mt-2 text-truncate"> Terapia Familiar Cognitivo Comportamental </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-dark border-0 shadow rounded-pill">
+                            <div class="d-flex align-items-center p-2 justify-content-center">
+                                <span class="material-icons md-36">
+                                    navigate_next
+                                </span>
+                                <h6 class="card-title mt-2 "> Terapia Ocupacional </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-dark border-0 shadow rounded-pill">
+                            <div class="d-flex align-items-center p-2 justify-content-center">
+                                <span class="material-icons md-36">
+                                    navigate_next
+                                </span>
+                                <h6 class="card-title mt-2 "> Fonoaudiologia </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-dark border-0 shadow rounded-pill">
+                            <div class="d-flex align-items-center p-2 justify-content-center">
+                                <span class="material-icons md-36">
+                                    navigate_next
+                                </span>
+                                <h6 class="card-title mt-2 "> Psicopedagogia </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-dark border-0 shadow rounded-pill">
+                            <div class="d-flex align-items-center p-2 justify-content-center">
+                                <span class="material-icons md-36">
+                                    navigate_next
+                                </span>
+                                <h6 class="card-title mt-2 "> Psicomotricidade </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row p-4 text-center servicos pt-5 pb-5">
+            <div class="col-md-12 mb-3 mt-2">
+                <h2 class="font-weight-bold">Nossos diferenciais</h2>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12 text-center"><span class="material-icons" style="font-size: 36px;">
+                    done_all
+                    </span></div>
+                <div class="col-md-12">
+                    <h3>Metodologia Inovadora</h3>
+                    <p>Diversas terapias adequadas à necessidade do paciente, supervisionadas e alinhadas pela sócia responsável pelo caso. </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="col-md-12 text-center"><span class="material-icons" style="font-size: 36px;">
+                    people_alt
+                    </span></div>
+                <div class="col-md-12">
+                    <h3>Equipe experiente</h3>
+                    <p>Seleção de profissionais com qualificação e diversos anos de experiência no atendimento de crianças e adultos. </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="col-md-12 text-center"><span class="material-icons" style="font-size: 36px;">
+                    show_chart
+                    </span></div>
+                <div class="col-md-12">
+                    <h3>Eficiência</h3>
+                    <p>Análise constante do desenvolvimento e adequação das terapias com o objetivo de buscar uma constante melhora do paciente. </p>
+                </div>
+            </div>
+        </div>
+        <!-- Equipe -->
+        <div class="row  p-3 mt-3 mb-5 pb-5 pt-5">
+            <div class="col-md-12 ">
+                <h2 class="text-center font-weight-bold mb-2">Equipe </h2>
+                <h6 class="text-center">Conheça nossas especialistas</h6>
+            </div>
+            <div class="col-md-3 p-3">
+                <div class="card shadow ">
+                    <img src="https://www.clinicaformare.com.br/img/card/img-fabi.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p> <strong>Fabiana Pignataro</strong></p>
+                        <p>Sócia-Diretora e Psicóloga</p>
+                        <p class="card-text">Psicóloga, especialista em Análise do Comportamento Aplicada ao Autismo – UFSCAR. Experiência clínica de mais de 14 anos na área.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-3">
+                <div class="card shadow ">
+                    <img src="https://www.clinicaformare.com.br/img/card/img-carmen.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p> <strong>Fabiana Pignataro</strong></p>
+                        <p>Sócia-Diretora e Psicóloga</p>
+                        <p class="card-text">Psicóloga, especialista em Análise do Comportamento Aplicada ao Autismo – UFSCAR. Experiência clínica de mais de 14 anos na área.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 p-3">
+                <div class="card shadow ">
+                    <img src="https://www.clinicaformare.com.br/img/card/img-silvia.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p> <strong>Fabiana Pignataro</strong></p>
+                        <p>Sócia-Diretora e Psicóloga</p>
+                        <p class="card-text">Psicóloga, especialista em Análise do Comportamento Aplicada ao Autismo – UFSCAR. Experiência clínica de mais de 14 anos na área.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-3">
+                <div class="card shadow ">
+                    <img src="https://www.clinicaformare.com.br/img/card/img-marina.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p> <strong>Fabiana Pignataro</strong></p>
+                        <p>Sócia-Diretora e Psicóloga</p>
+                        <p class="card-text">Psicóloga, especialista em Análise do Comportamento Aplicada ao Autismo – UFSCAR. Experiência clínica de mais de 14 anos na área.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- Agende uma visita -->
+        <div class="row meet-us">
+            <div class="layer">
+            </div>
+            <div class="container align-items-center d-flex">
+                <div class="row p-5 text-center">
+                    <div class="col-md-12">
+                        <h3 class="font-weight-bold">Venha nos conhecer. Agende uma visita!</h3>
+                    </div>
+                    <div class="col-md-6 text-right d-flex justify-content-end fale-conosco-btn p-2"> <button class="btn-purple" type="submit">Fale conosco</button></div>
+                    <div class="col-md-6 text-left  align-items-center wtapp-wrapper p-2" style="font-size: 25px;"><i class="fab fa-whatsapp"></i> (11) 9999-9999
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mapa -->
+        <div class="row">
+
+            <div class="col-md-12 p-0 ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14621.434488464685!2d-46.6565842!3d-23.6273246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ae70697e64d7085!2sCongonhas-S%C3%A3o%20Paulo%20Airport!5e0!3m2!1sen!2sbr!4v1588685573905!5m2!1sen!2sbr"
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+        <!-- Rodapé -->
+        <div class="row footer p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a>
+                                <img src="img/logo-nobg.png" class="logo-img" />
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="items-align">
+                            <span class="material-icons"> place </span> &nbsp;Rua Baronesa de Bela Vista, 500 Campo Belo - São Paulo, SP
+                        </p>
+                        <p class="items-align">
+                            <span class="material-icons"> local_phone </span>&nbsp; (11) 9999-9999
+                        </p>
+                        <p class="items-align">
+                            <i class="fab fa-whatsapp" style="font-size: 24px;"></i> &nbsp;&nbsp;&nbsp;(11) 9999-9999
+                        </p>
+                        <p class="items-align">
+                            <span class="material-icons"> email </span>&nbsp; atendimento@clinicatasking.com.br
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Rodapé bottom -->
+        <div class="row direitos text-light text-small">
+            <div class="container">
+                <div class="row h-100">
+                    <div class="col-md-6 mt-auto mb-auto adjust-text">
+                        <small>  <span class="material-icons align-middle">
+                        copyright
+                        </span>&nbsp; <span class="align-middle">Reprodução não autorizada</span> 
+                    </small>
+                    </div>
+                    <div class="col-md-6 mt-auto mb-auto text-right adjust-text">
+                        <small> <span class="text-muted">Desenvolvido por </span> Petize</small>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
