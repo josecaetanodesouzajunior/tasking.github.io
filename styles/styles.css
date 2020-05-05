@@ -268,4 +268,7 @@ h2 {
     .adjust-text {
         text-align: center !important;
     }
+    h2 {
+        font-size: 2em !important;
+    }
 }
