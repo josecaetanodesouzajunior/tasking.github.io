@@ -271,4 +271,7 @@ h2 {
     h2 {
         font-size: 2em !important;
     }
+    .banner {
+        background-image: url('../img/comp/atendimento.jpg');
+    }
 }
