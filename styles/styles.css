@@ -274,4 +274,8 @@ h2 {
     .banner {
         background-image: url('../img/comp/atendimentoresized.jpg');
     }
+    .meet-us {
+        background-image: url('../img/comp/meetresized.jpg');
+        background-attachment: fixed;
+    }
 }
