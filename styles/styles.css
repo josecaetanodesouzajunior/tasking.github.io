@@ -260,6 +260,7 @@ h2 {
     }
     .logo {
         text-align: center;
+        max-width: 240px;
     }
     .nav {
         flex-direction: column;
