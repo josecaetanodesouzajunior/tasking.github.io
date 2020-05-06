@@ -276,6 +276,6 @@ h2 {
     }
     .meet-us {
         background-image: url('../img/comp/meetresized.jpg');
-        background-attachment: fixed;
+        background-attachment: scroll;
     }
 }
