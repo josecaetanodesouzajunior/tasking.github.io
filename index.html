@@ -22,12 +22,14 @@
             document.getElementById("menu").style.display = "block";
             document.getElementById("btn-menu-mostrar").style.display = "none";
             document.getElementById("btn-menu-esconder").style.display = "block";
+            document.getElementById("navigation").style.display = "block";
         }
 
         function hideMenu() {
             document.getElementById("menu").style.display = "none";
             document.getElementById("btn-menu-esconder").style.display = "none";
             document.getElementById("btn-menu-mostrar").style.display = "block";
+            document.getElementById("navigation").style.display = "none";
         }
     </script>
 
@@ -37,27 +39,28 @@
     <div class="container-fluid">
         <div class="container">
 
-            <div class="header row mt-4 mb-4">
-                <div class="col-md-3 col-sm-12 logo">
+            <div class="header  mt-4 mb-4">
+                <div class="logo">
                     <a>
                         <img src="img/logo-nobg.png" class="logo-img" />
                     </a>
-                    <div class="col-sm-12 btn-group">
-                        <a id="btn-menu-mostrar" onclick="showMenu()"><span class="material-icons"
-                            style=" font-size: 35px !important;">
-                            expand_more
-                        </span></a>
-                        <a id="btn-menu-esconder" onclick="hideMenu()"><span class="material-icons"
-                            style=" font-size: 35px !important;">
-                            expand_less
-                        </span></a>
-                    </div>
+
                 </div>
-                <div class="col-md-9 col-sm-12">
+                <div class="btn-group">
+                    <a id="btn-menu-mostrar" onclick="showMenu()"><span class="material-icons"
+                        style=" font-size: 35px !important;">
+                        menu
+                    </span></a>
+                    <a id="btn-menu-esconder" onclick="hideMenu()"><span class="material-icons"
+                        style=" font-size: 35px !important;">
+                        menu
+                    </span></a>
+                </div>
+                <div id="navigation">
                     <div class="row h-100">
                         <div class="col-md-12 h-100">
                             <div class="row top-nav">
-                                <div class="col-md-12 d-flex justify-content-end align-items-center" style="font-size:small ;">
+                                <div class="mt-2 col-md-12 d-flex justify-content-end align-items-center" style="font-size:small ;">
                                     <div class="items-align m-2">
                                         <span class="material-icons"> local_phone </span>&nbsp; (11) 9999-9999
                                     </div>
@@ -68,7 +71,7 @@
                                     <i class="fab fa-facebook m-2" style="font-size: 18px;"></i>
                                 </div>
                             </div>
-                            <div class="row menu align-bottom" id="menu">
+                            <div class="row menu align-bottom mt-2" id="menu">
                                 <div class="col-md-12 d-flex justify-content-end mt-2 nav-block">
                                     <ul class="nav">
                                         <li class="nav-item">
@@ -141,7 +144,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 d-flex justify-content-end">
-                        <img style="max-width: 100%;" src="https://desenvolviver.com/wp-content/uploads/2019/05/Psicoterapia-desenvolviver.png" alt="">
+                        <img class="img-fluid img-brain" style="max-width: 100%; height: auto;" src="img/brain.png" alt="">
                     </div>
                 </div>
             </div>
@@ -334,10 +337,11 @@
         <div class="row meet-us">
             <div class="layer">
             </div>
-            <div class="container align-items-center d-flex">
-                <div class="row p-5 text-center">
+            <div class="container align-items-center ">
+                <div class="row p-5 text-center mt-5">
                     <div class="col-md-12">
-                        <h3 class="font-weight-bold">Venha nos conhecer. Agende uma visita!</h3>
+                        <h2 class="font-weight-bold">Venha nos conhecer</h2>
+                        <h6>Agende uma visita!</h6>
                     </div>
                     <div class="col-md-6 text-right d-flex justify-content-end fale-conosco-btn p-2"> <button class="btn-purple" type="submit">Fale conosco</button></div>
                     <div class="col-md-6 text-left  align-items-center wtapp-wrapper p-2" style="font-size: 25px;"><i class="fab fa-whatsapp"></i> (11) 9999-9999

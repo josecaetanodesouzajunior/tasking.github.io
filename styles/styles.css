@@ -9,6 +9,9 @@ h2 {
 
 .header {
     min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo-img {
@@ -111,6 +114,10 @@ h2 {
     background: #FF6A88;
     font-size: 15px;
     color: white;
+}
+
+.card-text {
+    font-size: small;
 }
 
 .items-align {
@@ -292,5 +299,18 @@ h2 {
     .meet-us {
         background-image: url('../img/comp/meetresized.jpg');
         background-attachment: scroll;
+    }
+    .banner-button {
+        text-align: center;
+    }
+    .img-brain {
+        max-height: 300px;
+        ;
+    }
+    #navigation {
+        display: none;
+        flex-grow: 1;
+        flex-basis: 100%;
+        text-align: left;
     }
 }
