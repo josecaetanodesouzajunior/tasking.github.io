@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/b3198cde4d.js" crossorigin="anonymous"></script>
+    <script>
+        function showMenu() {
+            document.getElementById("menu").style.display = "block";
+            document.getElementById("btn-menu-mostrar").style.display = "none";
+            document.getElementById("btn-menu-esconder").style.display = "block";
+            document.getElementById("navigation").style.display = "block";
+        }
+
+        function hideMenu() {
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("btn-menu-esconder").style.display = "none";
+            document.getElementById("btn-menu-mostrar").style.display = "block";
+            document.getElementById("navigation").style.display = "none";
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+
+            <div class="header  mt-4 mb-4">
+                <div class="logo">
+                    <a>
+                        <img src="img/logo-nobg.png" class="logo-img" />
+                    </a>
+
+                </div>
+                <div class="btn-group">
+                    <a id="btn-menu-mostrar" onclick="showMenu()"><span class="material-icons"
+                        style=" font-size: 35px !important;">
+                        menu
+                    </span></a>
+                    <a id="btn-menu-esconder" onclick="hideMenu()"><span class="material-icons"
+                        style=" font-size: 35px !important;">
+                        menu
+                    </span></a>
+                </div>
+                <div id="navigation">
+                    <div class="row h-100">
+                        <div class="col-md-12 h-100">
+                            <div class="row top-nav">
+                                <div class="mt-2 col-md-12 d-flex justify-content-end align-items-center" style="font-size:small ;">
+                                    <div class="items-align m-2">
+                                        <span class="material-icons"> local_phone </span>&nbsp; (11) 9999-9999
+                                    </div>
+                                    <div class="items-align m-2">
+                                        <span class="material-icons"> email </span> &nbsp; atendimento@clinicatasking.com.br
+                                    </div>
+                                    <i class="fab fa-instagram m-2" style="font-size: 18px;"> </i>
+                                    <i class="fab fa-facebook m-2" style="font-size: 18px;"></i>
+                                </div>
+                            </div>
+                            <div class="row menu align-bottom mt-2" id="menu">
+                                <div class="col-md-12 d-flex justify-content-end mt-2 nav-block">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Quemsomos.html">Quem somos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="nossosservicos.html">Nossos serviços</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#">Equipe</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">A clínica</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contato.html" tabindex="-1">Contato</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="servicos row align-items-center">
+
+            <div class="col-md-12 text-center ">
+                <div class="col-md-12 banner-title fadeInDown">
+                    <h2>Conheça nosso time
+                    </h2>
+                </div>
+                <div class="col-md-12 mt-4 banner-subtitle fadeInUp ">
+                    <h3>Conheça as pesssoas que lideram nossa equipe de profissionais</h3>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row  p-3 mt-3 mb-5 pb-5 pt-5">
+                <div class="col-md-12 ">
+                    <h3 class="text-center">Nossas especialistas</h3>
+                </div>
+                <div class="col-md-6 p-3">
+                    <div class="card shadow ">
+                        <img src="https://www.clinicaformare.com.br/img/card/img-fabi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p> <strong>Fabiana Pignataro</strong></p>
+                            <p>Sócia-Diretora e Psicóloga</p>
+                            <p class="card-text">Psicóloga, especialista em Análise do Comportamento Aplicada ao Autismo – UFSCAR. Experiência clínica de mais de 14 anos na área.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-3">
+                    <div class="card shadow ">
+                        <img src="https://www.clinicaformare.com.br/img/card/img-carmen.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p> <strong>Fabiana Pignataro</strong></p>
+                            <p>Sócia-Diretora e Psicóloga</p>
+                            <p class="card-text">Psicóloga, especialista em Análise do Comportamento Aplicada ao Autismo – UFSCAR. Experiência clínica de mais de 14 anos na área.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 p-3">
+                    <div class="card shadow ">
+                        <img src="https://www.clinicaformare.com.br/img/card/img-silvia.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p> <strong>Fabiana Pignataro</strong></p>
+                            <p>Sócia-Diretora e Psicóloga</p>
+                            <p class="card-text">Psicóloga, especialista em Análise do Comportamento Aplicada ao Autismo – UFSCAR. Experiência clínica de mais de 14 anos na área.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-3">
+                    <div class="card shadow ">
+                        <img src="https://www.clinicaformare.com.br/img/card/img-marina.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p> <strong>Fabiana Pignataro</strong></p>
+                            <p>Sócia-Diretora e Psicóloga</p>
+                            <p class="card-text">Psicóloga, especialista em Análise do Comportamento Aplicada ao Autismo – UFSCAR. Experiência clínica de mais de 14 anos na área.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Agende uma visita -->
+        <div class="row meet-us">
+            <div class="layer">
+            </div>
+            <div class="container align-items-center ">
+                <div class="row p-5 text-center mt-5">
+                    <div class="col-md-12">
+                        <h2 class="font-weight-bold">Venha nos conhecer</h2>
+                        <h6>Agende uma visita!</h6>
+                    </div>
+                    <div class="col-md-6 text-right d-flex justify-content-end fale-conosco-btn p-2"> <button class="btn-purple" type="submit">Fale conosco</button></div>
+                    <div class="col-md-6 text-left  align-items-center wtapp-wrapper p-2" style="font-size: 25px;"><i class="fab fa-whatsapp"></i> (11) 9999-9999
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mapa -->
+        <div class="row">
+
+            <div class="col-md-12 p-0 ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14621.434488464685!2d-46.6565842!3d-23.6273246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ae70697e64d7085!2sCongonhas-S%C3%A3o%20Paulo%20Airport!5e0!3m2!1sen!2sbr!4v1588685573905!5m2!1sen!2sbr"
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+        <!-- Rodapé -->
+        <div class="row footer p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a>
+                                <img src="img/logo-nobg.png" class="logo-img" />
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="items-align">
+                            <span class="material-icons"> place </span> &nbsp;Rua Baronesa de Bela Vista, 500 Campo Belo - São Paulo, SP
+                        </p>
+                        <p class="items-align">
+                            <span class="material-icons"> local_phone </span>&nbsp; (11) 9999-9999
+                        </p>
+                        <p class="items-align">
+                            <i class="fab fa-whatsapp" style="font-size: 24px;"></i> &nbsp;&nbsp;&nbsp;(11) 9999-9999
+                        </p>
+                        <p class="items-align">
+                            <span class="material-icons"> email </span>&nbsp; <span class="text-truncate">atendimento@clinicatasking.com.br</span>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Rodapé bottom -->
+        <div class="row direitos text-light text-small">
+            <div class="container">
+                <div class="row h-100">
+                    <div class="col-md-6 mt-auto mb-auto adjust-text copy">
+                        <small>  <span class="material-icons align-middle">
+                        copyright
+                        </span>&nbsp; <span class="align-middle">Reprodução não autorizada</span> 
+                    </small>
+                    </div>
+                    <div class="col-md-6 mt-auto mb-auto text-right adjust-text">
+                        <small> <span>Desenvolvido por </span> <strong>Petize</strong> </small>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

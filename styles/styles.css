@@ -23,12 +23,12 @@ h2 {
 }
 
 .nav-link:hover {
-    color: #ff9a8b !important;
-    border-bottom: 1px solid #ff9a8b;
+    color: #f278ba !important;
+    border-bottom: 1px solid #f278ba;
 }
 
 .nav-link.active {
-    color: #ff9a8b !important;
+    color: #f278ba !important;
 }
 
 .layer {
@@ -38,6 +38,21 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.contact-form .contact-icon {
+    left: 34px;
+    position: absolute;
+    top: 16px;
+    color: #444;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #f278ba;
+    outline: 0;
+    box-shadow: none;
 }
 
 .banner {
