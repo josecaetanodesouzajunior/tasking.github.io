@@ -332,4 +332,7 @@ h2 {
     .copy {
         display: none;
     }
+    .img-jc {
+        height: 40vw !important;
+    }
 }
