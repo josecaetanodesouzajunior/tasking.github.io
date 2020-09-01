@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Tasking</title>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
@@ -62,7 +62,7 @@
                             <div class="row top-nav">
                                 <div class="mt-2 col-md-12 d-flex justify-content-end align-items-center" style="font-size:small ;">
                                     <div class="items-align m-2">
-                                        <span class="material-icons"> local_phone </span>&nbsp; (11) 9999-9999
+                                        <span class="material-icons"> local_phone </span>&nbsp; (11) 99122-5335
                                     </div>
                                     <div class="items-align m-2">
                                         <span class="material-icons"> email </span> &nbsp; atendimento@clinicatasking.com.br
@@ -123,7 +123,7 @@
 
                     </h3>
                     <p>Retornaremos o mais breve possível!</p><br/>
-                    <form class="contact-form" method="POST" action="https://cx9cnpcd6d.execute-api.us-east-1.amazonaws.com/contactform" data-toggle="validator">
+                    <form id="my-form" class="contact-form" method="POST" action="https://formspree.io/mbjyownr" data-toggle="validator">
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="form-group">
@@ -133,7 +133,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <input type="email" class="form-control rounded-pill" id="email" name="email" placeholder="E-mail" required data-error="É necessário preencher este campo.">
+                                    <input type="email" class="form-control rounded-pill" id="email" name="_replyto" placeholder="E-mail" required data-error="É necessário preencher este campo.">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -148,9 +148,10 @@
                                     <textarea id="mensagem" rows="8" class="w-100 rounded-pill form-control" placeholder="Mensagem" name="mensagem" required data-error="É necessário preencher este campo."></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
-                                <button type="submit" id="form-submit" class="btn-purple">Enviar</button>
+                                <button type="submit" id="my-form-button" class="btn-purple">Enviar</button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
+                                <p id="my-form-status"></p>
                             </div>
                         </div>
                     </form>
@@ -163,7 +164,7 @@
         <div class="row">
 
             <div class="col-md-12 p-0 ">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14621.434488464685!2d-46.6565842!3d-23.6273246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ae70697e64d7085!2sCongonhas-S%C3%A3o%20Paulo%20Airport!5e0!3m2!1sen!2sbr!4v1588685573905!5m2!1sen!2sbr"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.523385773583!2d-46.66549938502112!3d-23.621420284653045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a710a9c55bd%3A0x8ba0599922e41266!2sR.%20Visc.%20de%20Aguiar%20Toledo%2C%20144%20-%20Vila%20Congonhas%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004612-100!5e0!3m2!1sen!2sbr!4v1598988125052!5m2!1sen!2sbr"
                     width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
@@ -180,13 +181,14 @@
                     </div>
                     <div class="col-md-6">
                         <p class="items-align">
-                            <span class="material-icons"> place </span> &nbsp;Rua Baronesa de Bela Vista, 500 Campo Belo - São Paulo, SP
+                            <span class="material-icons"> place </span> &nbsp;Rua Visconde de Aguiar Toledo, 144 Campo Belo - São Paulo, SP
                         </p>
                         <p class="items-align">
-                            <span class="material-icons"> local_phone </span>&nbsp; (11) 9999-9999
+                            <span class="material-icons"> local_phone </span>&nbsp; (11) 99122-5335
+
                         </p>
                         <p class="items-align">
-                            <i class="fab fa-whatsapp" style="font-size: 24px;"></i> &nbsp;&nbsp;&nbsp;(11) 9999-9999
+                            <i class="fab fa-whatsapp" style="font-size: 24px;"></i> &nbsp;&nbsp;&nbsp;(11) 99892-1366
                         </p>
                         <p class="items-align">
                             <span class="material-icons"> email </span>&nbsp; <span class="text-truncate">atendimento@clinicatasking.com.br</span>
@@ -217,7 +219,52 @@
 
 
     </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            // get the form elements defined in your form HTML above
 
+            var form = document.getElementById('my-form');
+            var button = document.getElementById('my-form-button');
+            var status = document.getElementById('my-form-status');
+
+            // Success and Error functions for after the form is submitted
+
+            function success() {
+                form.reset();
+                button.style = 'display: none ';
+                status.innerHTML = 'Mensagem enviada!';
+            }
+
+            function error() {
+                status.innerHTML = 'Oops! Ocorreu algum erro.';
+            }
+
+            // handle the form submission event
+
+            form.addEventListener('submit', function(ev) {
+                ev.preventDefault();
+                var data = new FormData(form);
+                ajax(form.method, form.action, data, success, error);
+            });
+        });
+
+        // helper function for sending an AJAX request
+
+        function ajax(method, url, data, success, error) {
+            var xhr = new XMLHttpRequest();
+            xhr.open(method, url);
+            xhr.setRequestHeader('Accept', 'application/json');
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                if (xhr.status === 200) {
+                    success(xhr.response, xhr.responseType);
+                } else {
+                    error(xhr.status, xhr.response, xhr.responseType);
+                }
+            };
+            xhr.send(data);
+        }
+    </script>
 
 </body>
 
